@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./images/iconka.png">
+    <title>Forms_work9</title>
+</head>
+
+<body>
+    <div class="backdrop is-hidden">
+        <div class="registration_field">
+            <div class="container">
+                <div class="header">
+                    <button class="close">
+                        <svg class="close_sign_icon">
+                            <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
+                        </svg>
+                    </button>
+                        <h1>Mishgan<span class="logo">SD</span></h1>
+                </div>
+                <form class="form inp_set" name="main_form" autocomplete="off">
+                            <h2 class="input_title" lang="uk">Поле Реєстрації:</h2>
+                        <ul class="inputs_list">
+                            <li class="input_item">
+                                <label for="name" class="inp_lab">Ім'я</label>
+                                <input type="text" class="registr name" maxlength="12" required id="name">
+                            </li>
+                            <li class="input_item">
+                                <label for="sec_name" class="inp_lab">Прізвище</label>
+                                <input type="text" class="registr name" maxlength="12" required id="sec_name">
+                            </li>
+                            <li class="input_item">
+                                <label for="log" class="inp_lab">Логін</label>
+                                <input type="text" class="registr login" maxlength="15" id="log">
+                            </li>
+                            <li class="input_item">
+                                <label for="passw" class="inp_lab">Пароль</label>
+                                <input type="password" class="registr pass" minlength="6" required id="passw">
+                            </li>
+                            <li class="input_item">
+                                <label for="passw_c" class="inp_lab">Підтвердіть пароль</label>
+                                <input type="password" class="registr pass_conf" minlength="6" required id="passw_c">
+                            </li>
+                            <li class="input_item">
+                                <label for="meil" class="inp_lab">E-mail</label>
+                                <input type="email" class="registr mail" required id="meil">
+                            </li>
+                            <li class="input_item" >
+                                <label for="telef" class="inp_lab">Телефон</label>
+                                <input type="tel" class="registr tel" required id="telef">
+                            </li>
+                        </ul>     
+                    <fieldset class="cgoice_field">
+                        <legend class="choice_legend">Оберіть стать і дату народження</legend>
+                        <ul class="sex_list">
+                            <li class="sex_list_item">
+                                <input type="radio" name="contact" id="radm" class=" radio" aria-checked="undefined" required>
+                                <label for="radm" class="declaration" lang="uk">Чоловік.</label>
+                            </li>
+                            <li class="sex_list_item">
+                                <input type="radio" id="radf" name="contact" class="radio" aria-checked="undefined" required>
+                                <label for="radf" class="declaration" lang="uk">Жінка.</label>
+                            </li>
+                        </ul>
+                        <select name="day" id="day">
+                            <option>День</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select name="month" id="month">
+                            <option>Місяць</option>
+                            <option>Січень</option>
+                            <option>Лютий</option>
+                            <option>Березень</option>
+                            <option>Квітень</option>
+                            <option>Травень</option>
+                            <option>Червень</option>
+                            <option>Липень</option>
+                            <option>Серпень</option>
+                            <option>Вересень</option>
+                            <option>Жовтень</option>
+                            <option>Листопад</option>
+                            <option>Грудень</option>
+                        </select>
+                        <select name="year" id="year" >
+                            <option>Рік</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="range">
+                        <legend class="range_leg">
+                            Кількість місяців підписки на сайт
+                        </legend>
+                        <span class="range_num">1</span>
+                        <input type="range" min="1" max="5" step="1" class="ran_in">
+                        <span class="range_num">5</span>
+                    </fieldset>
+                        <ul class="politic_list">
+                            <li class="politic_item">
+                                <input type="checkbox" id="privat" class="privacy" required>
+                                <label for="privat" class="priv"> Я погоджуюся з 
+                                    <a class="politic_link" href="https://zakon.rada.gov.ua/laws/main/index" target="_blank" rel="noopener noreferrer">політикою конфіденційності
+                                    </a>.
+                                </label>
+                            </li>
+                            <li class="politic_item">
+                                <input type="checkbox" id="post_con">
+                                <label for="post_con" class="priv">Відправити копію договору на пошту.</label>
+                            </li>
+                            <li class="politic_item">
+                                <input type="checkbox" id="tel_con">
+                                <label for="tel_con" class="priv">Зателефонувати після реєстрації.</label>
+                            </li>
+                        </ul>
+                   
+                    <div class="buttons">
+                        <ul class="btn_list">
+                            <li class="list_item"><button class="btn submit" type="submit">Confirm</button></li>
+                            <li class="list_item"><button class="btn reset" type="reset">Reset</button></li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cover_block is-none">
+        <div class="login_div">
+            <div class="header">
+                <h1>Mishgan<span class="logo">SD</span></h1>
+        </div>
+            <button class="close_login" title="Close">
+                <svg class="close_icon" width="26px" height ="26px">
+                    <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+            <form class="login_form" name="login_form" autocomplete="off">
+                <ul>
+                    <li class="login_item">
+                        <label class="login_label" for="mail">E-mail</label>
+                        <input type="email" required id="mail" class="log_input" name="e_mail" >
+                    </li>
+                    <li class="login_item">
+                        <label class="login_label" for="pass">Password</label>
+                        <input type="password" required id="pass" class="log_input" name="passwors">
+                    </li>
+                    <li class="login_item">
+                        <button class="login_submit" type="submit" lang="ru">Enter</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="signing_choice">
+            <div class="social_block">
+                <h1>Mishgan<span class="logo">SD</span></h1>
+                <div class="soc_icons">
+                    <ul class="soc_list">
+                        <li class="soc_item">
+                            <a href="https://www.instagram.com" class="social_link" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                <svg class="soc_icon" width="24px" height="24px">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc_item">
+                            <a href="https://www.facebook.com" class="social_link" target="_blank" rel="noreferrer noopener" title="Facebook">
+                                <svg class="soc_icon" width="24px" height="24px">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc_item">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social_link" title="Linkedin">
+                                <svg class="soc_icon" width="24px" height="24px">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <ul class="button_list">
+            <li class="button_item">
+                <button class="reg_btns sign">Sign up</button>
+            </li>
+            <li class="button_item">
+                <button class="reg_btns log">Log in</button>
+            </li>
+            <li class="button_item">
+                    <a class="reg_btns back" href="https://www.google.com" target="_blank">Back</a>
+            </li>
+        </ul>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
